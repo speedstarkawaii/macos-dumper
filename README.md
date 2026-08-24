@@ -1,6 +1,6 @@
 # macos-dumper
 
-roblox dumper that derives from disassembly. that means its not detected & its mostly just a parser. calling it a dumper sounds too much imo.
+roblox dumper that derives from disassembly. that means its not detected & its mostly just a parser. calling it a dumper sounds too much lol.
 
 # how to use?
 
@@ -13,7 +13,7 @@ roblox dumper that derives from disassembly. that means its not detected & its m
 
 2. example.
 
-if you go to `parse.h` you can see how it works. you can tweak a few like for example:
+if you go to `dump.c` you can see how it works. you can tweak a few like for example:
 
 to find spawn its "**Spawn function requires 1 argument**",
 
@@ -25,6 +25,6 @@ so you just tweak or make another searcher that specifically finds that instruct
 
 you are free to change anything or even buff this. I only made this for a temporary auto print sploit for Mac whilst I was busy irl
 
-I personally use capstone (rip eyestep) as this is a good disasm framework; anyways have fun !
+I personally use capstone (rip eyestep) as this is a good disasm framework for Mac; anyways have fun !
 
-some things can take a bit to load. my disassembly is around 200MB's so its normal to take a second more for searches 
+some things can take a bit to load. disassembly is around 200MB's so its normal to take a second more for search(es)
