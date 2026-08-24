@@ -7,6 +7,7 @@
 #include <string>
 #include <string.h>
 
+// READ https://github.com/speedstarkawaii/macos-dumper TO USE
 const std::string &rbxloc = "/Users/speednextdoor/Desktop/roblox.asm"; // if you are thinking about placing this in a public exploit(which i dont advise you... PS. take a look at capstone if you want to make an actual macos dumper) hide the location in /Users/speedsterkawaii OR upload the disassembly on your website and send http requests to get.
 
 // AND another note: why do we flex patternless dumpers nowadays?? it was the norm years ago
