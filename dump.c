@@ -10,11 +10,12 @@
 // READ https://github.com/speedstarkawaii/macos-dumper TO USE
 const std::string &rbxloc = "/Users/speednextdoor/Desktop/roblox.asm"; // if you are thinking about placing this in a public exploit(which i dont advise you... PS. take a look at capstone if you want to make an actual macos dumper) hide the location in /Users/speedsterkawaii OR upload the disassembly on your website and send http requests to get.
 
-// AND another note: why do we flex patternless dumpers nowadays?? it was the norm years ago
+// AND another note: why do we flex patternless dumpers nowadays?? it was literally default simple shit  years ago
 
 namespace funcs{
 std::string ins;
 
+// edit: if your smart  you can return gettop tolstring & currentsecuritycontext with this same exact function
 std::string getprint()//this is specifically forprint (finds next call after identity string)
 {
     std::ifstream disasm(rbxloc);
@@ -23,6 +24,10 @@ std::string getprint()//this is specifically forprint (finds next call after ide
 
     while (std::getline(disasm, ins))
     {
+        
+         //  ## literal pool for: "Skip coverage stats because script is missing (name: %s)"
+        //   ## literal pool for: "Lua heap saved to %s"
+        //  ## literal pool for: "Native code generation of script %s failed:  %s."
         if (ins.find("Current identity is %d") == std::string::npos) // other ways to get print. but roblox wont be removing this any time soon.
             continue;
 
@@ -37,24 +42,26 @@ std::string getprint()//this is specifically forprint (finds next call after ide
         break;
     }
 
-    disasm.close();
+    //
+    //disasm.close();
     return {};
 }
- 
 
 }
 
-int main()// god this whole project reminds me of the eyecrawl days...
+int main()//   this whole project reminded me of eyecrawl
 {
     std::cout << "// roblox dumper\n";
-    std::cout << "// arch: x86_64\n";
-    std::cout << "\n";
+    std::cout << "// macos, x86_64\n";
+    std::cout << "\n----------------\n\n";
 
     std::string rbxsoprintf = funcs::getprint();
     if (rbxsoprintf.empty()) { std::cout << "#define print \"?\"\n";rbxsoprintf="0";} // someone make a better  handler thx
-    std::cout << "#define RBX::printf_singelton 0x" << rbxsoprintf << '\n';
+    std::cout << "#define RBX_printf_singelton 0x" << rbxsoprintf << '\n';
 
-    std::cout << "done! this only gets print so. extend as wished !";
+    //DIY 
 
+    std::cout << "done! this only gets print";
+    std::cout << "\n\n https://github.com/speedstarkawaii/macos-dumper";
     return true;
 }
