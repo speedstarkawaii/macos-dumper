@@ -29,3 +29,7 @@ I personally use capstone (rip eyestep) as this is a good disasm framework for M
 some things can take a bit to load. disassembly is around 200MB's to 300MB so its normal to take a second more for search(es)
 
 AND YES. this METHOD won't die ! its literally looking for instructions with an assist of a string. if roblox **EVEN** changes the way print identity works  (it won't happen, trust me) then make fallbacks. 
+
+# for Windows?
+
+*yes* and *no*. you can use **IDA** to produce an assembly file. and `dump.c` must be modified  a little bit.
