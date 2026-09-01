@@ -28,4 +28,4 @@ I personally use capstone (rip eyestep) as this is a good disasm framework for M
 
 some things can take a bit to load. disassembly is around 200MB's to 300MB so its normal to take a second more for search(es)
 
-AND YES. this METHOD won't die ! its literally looking for instructions with an assist of a string. if roblox **EVEN** changes the way print identity works  (it won't happen, trust me) THEN it *MIGHT* break. *STILL NOT THE END OF THE WORLD*. THIS HASNT HAPPENED FOR 8 YEARS SINCE I STARTED EXPLOITING. nothing to worry about
+AND YES. this METHOD won't die ! its literally looking for instructions with an assist of a string. if roblox **EVEN** changes the way print identity works  (it won't happen, trust me) then make fallbacks. 
