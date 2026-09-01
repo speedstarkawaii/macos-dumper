@@ -4,13 +4,13 @@ roblox dumper that derives from disassembly. that means its not detected & its m
 
 # how to use?
 
-1. dumping disassembly
+1. paste this in terminal:
 
 ```otool -arch x86_64 -tvV  /Applications/Roblox.app/Contents/MacOS/RobloxPlayer  > roblox.asm```
 
 *this creates the file in /Users/ so you can extract instructions*.
 
-2. example.
+2. details
 
 if you go to `dump.c` you can see how it works. you can tweak a few like for example:
 
