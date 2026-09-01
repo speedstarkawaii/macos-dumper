@@ -8,7 +8,7 @@ roblox dumper that derives from disassembly. that means its not detected & its m
 
 ```otool -arch x86_64 -tvV  /Applications/Roblox.app/Contents/MacOS/RobloxPlayer  > roblox.asm```
 
-*this creates the file in /Users/speedsterkawaii so you can derive/path this in the parser*
+*this creates the file in /Users/ so you can extract instructions*.
 
 2. example.
 
