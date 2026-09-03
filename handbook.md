@@ -2,6 +2,10 @@
 
 first call above ## literal pool for: "Random.new requires 0 or 1 argument" 
 
+literally anywhere that arguments get checked
+
+fun fact lua_settop is only a function down.
+
 around  at least 8 instructions above
 
 ***************************************************************************
