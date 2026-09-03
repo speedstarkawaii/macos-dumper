@@ -20,7 +20,7 @@ std::string getprint()//this is specifically forprint (finds next call after ide
 {
     std::ifstream disasm(rbxloc);
 
-    std::regex inswel4(R"(callq\s+0x([0-9a-fA-F]+))");
+    std::regex inswel4(R"(callq\s+0x([0-9a-fA-F]+))"); // certain instruction we looking for
 
     while (std::getline(disasm, ins))
     {
@@ -42,9 +42,9 @@ std::string getprint()//this is specifically forprint (finds next call after ide
         break;
     }
 
-    //
+    // uncomment if u want auto updating printsploit
     //disasm.close();
-    return {};
+    return {}; 
 }
 
 }
