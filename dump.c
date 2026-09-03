@@ -18,6 +18,7 @@ std::string ins;
 // edit: if your smart  you can return gettop tolstring & currentsecuritycontext with this same exact function
 std::string getprint()//this is specifically forprint (finds next call after identity string)
 {
+    bool fallbacked = false; //DIY
     std::ifstream disasm(rbxloc);
 
     std::regex inswel4(R"(callq\s+0x([0-9a-fA-F]+))"); // certain instruction we looking for
