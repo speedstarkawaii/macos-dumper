@@ -15,7 +15,8 @@ const std::string &rbxloc = "/Users/speednextdoor/Desktop/roblox.asm"; // if you
 namespace funcs{
 std::string ins;
 
-// edit: if your smart  you can return gettop tolstring & RBX::Security::getUpdatedSecurityContext with this same exact function
+// EDIT: if your smart,   you can return gettop tolstring & RBX::Security::getUpdatedSecurityContext & printidentity with this same exact function
+
 std::string getprint()//this is specifically forprint (finds next call after identity string)
 {
     bool fallbacked = false; //DIY
